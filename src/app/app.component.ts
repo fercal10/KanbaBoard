@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<ako-kanban-board></ako-kanban-board>`,
+  styles: [
+    `
+      :host {
+        width: 100vw;
+      }
+    `,
+  ],
 })
-export class AppComponent {
-  title = 'kanba-board';
-}
+export class AppComponent {}
